@@ -1,0 +1,19 @@
+#main-menu li{
+	font-size: 17px;
+	font-family: kaiti;
+}
+
+#serverButton{
+	margin-top: 20px;
+}
+
+footer{
+	background-color: black;
+	text-align: center;
+	padding-top: 5px;
+}
+
+footer p a{
+	font-size:11px;
+	color: white;
+}

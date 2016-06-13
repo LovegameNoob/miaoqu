@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://123.59.89.189:8080/gm/index/mainMenu# -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./linecons.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./xenon-core.css">
+    <link rel="stylesheet" href="./xenon-forms.css">
+    <link rel="stylesheet" href="./xenon-components.css">
+    <link rel="stylesheet" href="./xenon-skins.css">
+    <link rel="stylesheet" href="./custom.css">
+    <script src="./jquery-1.11.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xenon Boostrap Admin Panel">
+    <meta name="author" content="">
+
+    <title>妙触后台登陆</title>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body class="page-body login-page login-light">
+<div class="login-container">
+
+    <div class="row">
+
+        <div class="col-sm-6">
+
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    // Reveal Login form
+                    setTimeout(function () {
+                        $(".fade-in-effect").addClass('in');
+                    }, 1);
+
+
+                    // Validation and Ajax action
+                    $("form#login").validate({
+                        rules: {
+                            username: {
+                                required: true
+                            },
+
+                            passwd: {
+                                required: true
+                            }
+                        },
+
+                        messages: {
+                            username: {
+                                required: '请输入用户名'
+                            },
+
+                            passwd: {
+                                required: '请输入密码'
+                            }
+                        },
+
+                    });
+
+                });
+            </script>
+
+            <!-- Add class "fade-in-effect" for login form effect -->
+            <form method="post" role="form" id="login" class="login-form fade-in-effect in"
+                  action="http://123.59.89.189:8080/gm/index/in" novalidate="novalidate">
+
+                <div class="login-header">
+                    <a href="http://123.59.89.189:8080/gm/index/mainMenu#" class="logo">
+                        <img src="./logo.png" alt="" width="80">
+                    </a>
+
+                    <p>欢迎使用妙触后台管理系统</p>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label" for="username">用户名</label>
+                    <input type="text" class="form-control" name="username" id="username" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="passwd">密码</label>
+                    <input type="password" class="form-control" name="passwd" id="passwd" autocomplete="off">
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary  btn-block text-left">
+                        <i class="fa-lock"></i>
+                        登陆
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Bottom Scripts -->
+<script src="./bootstrap.min.js"></script>
+<script src="./TweenMax.min.js"></script>
+<script src="./resizeable.js"></script>
+<script src="./joinable.js"></script>
+<script src="./xenon-api.js"></script>
+<script src="./xenon-toggles.js"></script>
+<script src="./jquery.validate.min.js"></script>
+<script src="./toastr.min.js"></script>
+
+
+<!-- JavaScripts initializations and stuff -->
+<script src="./xenon-custom.js"></script>
+
+
+</body>
+</html>
